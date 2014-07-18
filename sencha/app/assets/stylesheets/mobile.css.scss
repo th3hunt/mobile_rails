@@ -1,0 +1,20 @@
+@import 'touch/resources/themes/stylesheets/sencha-touch/default';
+@import 'touch/resources/themes/stylesheets/sencha-touch/default/all';
+
+.x-portrait {
+  form.login .logo{
+    height: 138px;
+    background-image: url(image_path('mobile/login.png'));
+    background-position:  50% 10px;
+    background-repeat: no-repeat;
+  }
+}
+
+.x-landscape {
+  form.login .logo {
+    height: 68px;
+    background-image: url(image_path('mobile/login_small.png'));
+    background-position:  50% 20px;
+    background-repeat: no-repeat;
+  }
+}

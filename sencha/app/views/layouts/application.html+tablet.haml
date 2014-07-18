@@ -1,0 +1,16 @@
+!!! 5
+%html
+  %head
+    %meta(charset="UTF-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    %meta(name="viewport" content="width=device-width, initial-scale=1")
+    %title Sencha on Rails
+    = stylesheet_link_tag 'mobile', media: 'all'
+    = csrf_meta_tags
+
+  %body
+
+    = yield
+
+    = javascript_include_tag 'mobile'
+    = yield :on_load
