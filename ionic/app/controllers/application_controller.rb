@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   before_action :detect_device_format
   before_action :authenticate_user!
 
+
   private
 
   def layout_by_resource
