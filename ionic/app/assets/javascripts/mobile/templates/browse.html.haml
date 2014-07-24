@@ -1,0 +1,10 @@
+%ion-view{title: "Browse"}
+  %ion-nav-buttons{side: "left"}
+    %button.button.button-icon.icon.ion-navicon{"menu-toggle" => "left"}
+  %ion-content.has-header
+    %ion-list
+      %ion-refresher(pulling-text="Pull to refresh" on-refresh="fetchNewPeople()")
+      %ion-item{"ng-repeat" => "person in people track by $index"}
+        %h3 {{person.name}}
+        %p {{person.email}}
+      / %ion-infinite-scroll(on-infinite="morePeople()")

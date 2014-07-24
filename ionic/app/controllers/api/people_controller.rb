@@ -2,12 +2,12 @@ class API::PeopleController < API::BaseController
 
   def index
     people = Person.all
-    render people.as_json, format: :json
+    render json: people.as_json
   end
 
   def show
     person = Person.find(params[:id])
-    render person.as_json, format: :json
+    render json: person
   end
 
 end
