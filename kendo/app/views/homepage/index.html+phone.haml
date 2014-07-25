@@ -1,0 +1,17 @@
+%div{"data-id" => "main-layout", "data-role" => "layout"}
+  %div{"data-role" => "header"}
+    %div{"data-role" => "navbar"}
+      %span{"data-role" => "view-title"}
+
+
+
+  %div{"data-role" => "footer"}
+    %div{"data-role" => "tabstrip"}
+      %a{"data-icon" => "home", href: "#home"} Home
+      %a{"data-icon" => "settings", href: "#settings"} Settings
+
+#home{"data-layout" => "main-layout", "data-role" => "view", "data-title" => "Home"}
+  %p Home
+
+#settings{"data-layout" => "main-layout", "data-role" => "view", "data-title" => "Settings"}
+  %p Settings

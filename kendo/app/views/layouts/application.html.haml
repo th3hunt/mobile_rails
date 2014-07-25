@@ -1,0 +1,14 @@
+!!! 5
+%html
+  %head
+    %title Kendo on Rails
+    %meta(charset="UTF-8")
+    = stylesheet_link_tag 'desktop', media: 'all'
+    = csrf_meta_tags
+
+  %body
+
+    = yield
+
+    = javascript_include_tag 'desktop'
+    = yield :on_load

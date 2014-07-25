@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+lena:
+  name: Lena Headey
+  email: lean@westeros.foo
+  age: 41
+  phone: +44 467 3456798
+  place_of_birth: 'Hamilton, Bermuda'
+
+peter:
+  name: Peter Dinklage
+  email: peter@westeros.foo
+  age: 38
+  phone: +44 467 5679344
+  place_of_birth: 'Morristown, New Jersey, USA'
+
+emilia:
+  name: Emilia Clarke
+  email: emilia@westeros.foo
+  age: 18
+  phone: +44 555 1234567
+  place_of_birth: 'London, England, UK'
+
+maisie:
+  name: Maisie Williams
+  email: maisie@westeros.foo
+  age: 38
+  phone: +44 345 5678909
+  place_of_birth: 'London, England, UK'
+
+ian:
+  name: Ian Glen
+  email: ian@westeros.foo
+  age: 54
+  phone: +42 389 9678557    
+  place_of_birth: 'Edinburgh, Scotland, UK'
+
+sophie:
+  name: Sophie Turner
+  email: sophie@westeros.foo
+  age: 18
+  phone: +44 434 7853466
+  place_of_birth: 'Northamptonshire, England, UK'
+
+jamie:
+  name: Nikolaj Coster-Waldau
+  email: jamie@westeros.foo
+  age: 38
+  phone: +44 678 4678444
+  place_of_birth: ' Rudkøbing, Denmark'
+
+the_hound:
+  name: Rory McCann
+  email: the_hound@westeros.foo
+  age: 45
+  phone: +44 556 4524423      
+  place_of_birth: 'London, England, UK'
