@@ -1,6 +1,6 @@
 / Layouts
 
-%div(data-id='intro-layout' data-role='layout')
+%div(data-id='intro-layout' data-role='layout' data-stretch='true')
 
 %div(data-id='main-layout' data-role='layout')
   %div(data-role='header')
@@ -34,8 +34,8 @@
           %a(href='#intro') Tutorial
 
 
-#intro(data-role='view' data-title='Intro' data-layout='intro-layout')
-  %div(data-role='scrollview')
+#intro(data-role='view' data-title='Intro' data-layout='intro-layout' data-stretch='true')
+  %div(data-role='scrollview' data-content-height="100%")
     %div(data-role='page')
       %h3 Thank you for choosing Awesome!
       #logo
