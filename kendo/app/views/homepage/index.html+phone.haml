@@ -1,17 +1,66 @@
-%div{"data-id" => "main-layout", "data-role" => "layout"}
-  %div{"data-role" => "header"}
-    %div{"data-role" => "navbar"}
-      %span{"data-role" => "view-title"}
+/ Layouts
+
+%div(data-id='intro-layout' data-role='layout')
+
+%div(data-id='main-layout' data-role='layout')
+  %div(data-role='header')
+    %div(data-role='navbar')
+      %a(data-role='button' data-rel='drawer' href='#drawer' data-align='left' data-icon='burger-menu')
+      %span(data-role='view-title')
+
+  %div(data-role='footer')
+    %div(data-role='tabstrip')
+      %a(data-icon='home'  href='#home') Home
+      %a(data-icon='settings' href='#settings') Settings
 
 
+/ Views
 
-  %div{"data-role" => "footer"}
-    %div{"data-role" => "tabstrip"}
-      %a{"data-icon" => "home", href: "#home"} Home
-      %a{"data-icon" => "settings", href: "#settings"} Settings
+#drawer(data-role='drawer' data-views='["home", "settings"]')
+  .km-view-title Profile
+  %ul(data-role='listview')
+    %li
+      %a(href='#home') Home
+    %li
+      %a(href='#settings') Settings
+    %li
+      %a(href='/users/sign_out' data-rel='external') Logout
 
-#home{"data-layout" => "main-layout", "data-role" => "view", "data-title" => "Home"}
+  %ul(data-role='listview' data-type='group')
+    %li
+      More
+      %ul
+        %li
+          %a(href='#intro') Tutorial
+
+
+#intro(data-role='view' data-title='Intro' data-layout='intro-layout')
+  %div(data-role='scrollview')
+    %div(data-role='page')
+      %h3 Thank you for choosing Awesome!
+      #logo
+        %img{:src => "#{image_path('mobile/app_icon.png')}"}
+      %p
+        We've worked super hard to make you happy.
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    %div(data-role='page')
+      %h3 Using Awesome
+      #list
+        %h5 Just three steps:
+        %ol
+          %li Be awesome
+          %li Stay awesome
+          %li There is no step 3
+
+    %div(data-role='page')
+      %h3 Any questions?
+      %p
+        Too bad!
+
+#home(data-role='view' data-title='Home')
   %p Home
 
-#settings{"data-layout" => "main-layout", "data-role" => "view", "data-title" => "Settings"}
+#settings(data-role='view' data-title='Settings')
   %p Settings
